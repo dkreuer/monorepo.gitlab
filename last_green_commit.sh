@@ -10,7 +10,6 @@ pushd ${DIRNAME}
 url="${CI_SERVER_URL}/api/v4/projects/${CI_PROJECT_ID}/pipelines?private_token=${PRIVATE_TOKEN}&status=success&ref=${CI_COMMIT_REF_NAME}"
 
 if [ $(which curl 2>/dev/null;) ] && [ $(which jq 2>/dev/null;) ]; then
-  curl -s ${url}
   commit=$(curl -s ${url} | jq -r -f jq.filter)
 else
   echo "Missing curl or jq; using python fallback"
