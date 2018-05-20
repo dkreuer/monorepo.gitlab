@@ -2,6 +2,8 @@
 > This is an improvement of https://github.com/awesome-inc/monorepo.gitlab
 > **NOTE:** only enhanced .sh files , no Windows support yet, feel free to fork and improve them.
 
+> This is an improvement of https://github.com/mobicorp/monorepo.gitlab
+> **NOTE:** no structural changes only variable improvements
 
 Scripts helping towards [Monorepo](https://medium.com/@maoberlehner/monorepos-in-the-wild-33c6eb246cb9) with [GitLab CI](https://docs.gitlab.com/ee/ci/yaml/).
 
@@ -13,7 +15,7 @@ Hopefully soon to be integrated into GitLab CI!
 Add as a submodule
 
 ```bash
-git submodule add https://github.com/mobicorp/monorepo.gitlab.git .monorepo.gitlab
+git submodule add https://github.com/dkreuer/monorepo.gitlab.git .monorepo.gitlab
 ```
 
 and update your `.gitlab-ci.yml`.
